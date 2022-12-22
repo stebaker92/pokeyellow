@@ -178,8 +178,9 @@ BillsPCMenu:
 	cp $1
 	jp z, BillsPCDeposit ; deposit
 	cp $2
-	jp z, BillsPCRelease ; release
-	cp $3
+	; Removing this option so we can't release pkmn
+	;jp z, BillsPCRelease ; release
+	;cp $3
 	jp z, BillsPCChangeBox ; change box
 	cp $4
 	jp z, BillsPCPrintBox
@@ -381,7 +382,7 @@ DisplayMonListMenu:
 BillsPCMenuText:
 	db   "WITHDRAW <PKMN>"
 	next "DEPOSIT <PKMN>"
-	next "RELEASE <PKMN>"
+	;next "RELEASE <PKMN>"
 	next "CHANGE BOX"
 	next "PRINT BOX"
 	next "SEE YA!"
