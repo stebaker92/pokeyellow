@@ -613,9 +613,9 @@ _IndigoPlateauHQText::
 
 _RedBedroomSNESText::
 	text "<PLAYER> is"
-	line "playing the SNES!"
+	line "playing the Sega!"
 	cont "...Okay!"
-	cont "It's time to go!"
+	cont "Gotta go fast!"
 	done
 
 _Route15UpstairsBinocularsText::
